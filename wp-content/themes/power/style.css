@@ -1,0 +1,435 @@
+/*
+Theme Name: FPT
+Theme URI: https://fpt.com.vn
+Author: FPT
+Author URI: 
+Description:
+Version: 10.0.0
+License: GPLv3 or later
+License URI: 
+Text Domain: FPT
+Tags:
+*/
+
+
+/* --------------------------------------
+=========================================
+    Fonts
+=========================================
+-----------------------------------------*/
+
+@font-face {
+    font-family: "Manrope";
+    src: url(./assets/fonts/manrope/static/Manrope-ExtraLight.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url(./assets/fonts/manrope/static/Manrope-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url(./assets/fonts/manrope/static/Manrope-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url(./assets/fonts/manrope/static/Manrope-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url(./assets/fonts/manrope/static/Manrope-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url(./assets/fonts/manrope/static/Manrope-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url(./assets/fonts/manrope/static/Manrope-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Public Sans";
+    src: url(./assets/fonts/public_sans/static/PublicSans-Black.ttf);
+    font-weight: 900;
+}
+
+
+@font-face {
+    font-family: "Public Sans";
+    src: url(./assets/fonts/public_sans/static/PublicSans-ExtraLight.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Public Sans";
+    src: url(./assets/fonts/public_sans/static/PublicSans-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Public Sans";
+    src: url(./assets/fonts/public_sans/static/PublicSans-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Public Sans";
+    src: url(./assets/fonts/public_sans/static/PublicSans-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Public Sans";
+    src: url(./assets/fonts/public_sans/static/PublicSans-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Public Sans";
+    src: url(./assets/fonts/public_sans/static/PublicSans-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Public Sans";
+    src: url(./assets/fonts/public_sans/static/PublicSans-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+
+/* --------------------------------------
+=========================================
+    End Fonts
+=========================================
+-----------------------------------------*/
+
+
+/* --------------------------------------
+=========================================
+    General Body
+=========================================
+-----------------------------------------*/
+.woocommerce div.product span.price.product-price{color:#dfa66e;font-size:30px;}
+.pro-details-quality {
+    display: flex;
+    margin-top: 5px;
+}
+
+span.label-quan {width: 88px;margin-top: 4px;font-size: 14px;font-weight: 700;}
+
+.woocommerce .pro-details-quality .quantity .qty {
+    background: transparent none repeat scroll 0 0;
+    border: medium none;
+    color: #333333;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 43px;
+    padding-left: 9px;
+}
+
+.quantity.buttons_added .minus {    height: 30px;
+    left: 12px;
+    top: 0;
+    border: 1px solid #ddd;
+    line-height: 25px;
+    width: 30px;
+    border-radius: 5px;
+}
+.quantity.buttons_added .plus {    height: 30px;
+    left: 12px;
+    top: 0;
+    border: 1px solid #ddd;
+    line-height: 25px;
+    width: 30px;
+    border-radius: 5px;
+}
+.woocommerce-flex-btn {
+    border-top: 1px solid #e2e2e2;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.woocommerce-flex-btn button {
+    width: 100%;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    background: #dfa66e;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+}
+.woocommerce div.product form.cart{margin-bottom:0px;}
+
+ul.tabs.wc-tabs {
+    /* border-bottom: 1px solid #ddd; */
+    text-align: center;
+    margin-bottom: 20px;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs.wc-tabs li{border:0px;background:none;}
+ul.tabs.wc-tabs  li a {
+    display: block;
+    color: #000;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding:10px;
+}
+ul.tabs.wc-tabs  li a.active {border-bottom: 2px solid #dfa66e;}
+ul.tabs.wc-tabs {}
+
+li#tab-title-description {}
+
+li#tab-title-description {}
+
+a.active {}
+.woocommerce-Tabs-panel.woocommerce-Tabs-panel--description p {
+    font-size: 15px;
+    color: #616161;
+    line-height: 30px;
+}
+.woocommerce-tabs.wc-tabs-wrapper {margin-top:40px}
+
+.woocommerce-images .c {
+    opacity: 0.2 !important;
+    display: none;
+}
+ol.breadcrumb {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 50px;
+    color: #fff;
+    margin: 0;
+}
+ol.breadcrumb a {color:#ffffff}
+/*---------------------------------------
+    Post Pagination
+-----------------------------------------*/
+.paginations {
+    margin: 0px;
+    text-align: center;
+    width: 100%;
+    clear: both;
+    display: block;
+}
+.paginations a, span.page-numbers.current {
+    border: solid 1px #f2f2ff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0 1px 0;
+    padding: 9px 16px;
+    transition: all 0.3s ease 0s;
+    vertical-align: baseline;
+    white-space: nowrap;
+    border-radius: 0px;
+    background-color: #f2f2ff;
+    color: #333;
+}
+
+.paginations a:hover, .paginations a:focus, .paginations a.active, span.page-numbers.current {
+    color: #ffffff;
+    border-radius: 0px;
+    background-color: #e1203b;
+}
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar. */
+}
+.page-template-page-introduce .bannerchild{
+    display: none;
+}
+.page-wrapper{padding:30px 0px;min-height:400px }
+.cart_btn a.btn-cart{position:relative;}
+.cart_btn a.btn-cart span {
+    background: red;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+.cart_btn a.btn-cart::after{display:none;}
+.is-sticky .shopping_cart{
+    margin-top: 15px;
+}
+.shopping_cart {
+
+    position: relative;
+  
+}
+.shopping_cart > .btn{
+    padding: 0px; 
+    background: transparent;
+}
+.shopping_cart .cart-contents{
+    margin: 0px;
+    position: relative;
+    display: block;
+}
+.shopping_cart .cart-contents span {
+    position: absolute;
+    right: -10px;
+    top: -15px;
+    background: #c02730;
+    color: #fff;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 0px 6px;
+}
+.shopping_cart img{
+    width: auto;
+}
+.shopping_cart .woocommerce-minicart {
+    right: 0;
+    left: auto;
+}
+.shopping_cart .woocommerce-minicart{
+    padding: 10px;
+   margin: 0px;
+   border-radius: 10px;
+}
+.shopping_cart .woocommerce-minicart ul{
+   padding: 0px;
+   margin: 0px;
+   list-style: none;
+}
+.shopping_cart .woocommerce-minicart ul.product_list_widget li img{
+    width: 60px;
+}
+.shopping_cart .woocommerce-minicart ul.product_list_widget li .quantity {
+    display: block;
+    margin-left: 15px;
+}
+.woocommerce-minicart ul li.mini_cart_item .remove.remove_from_cart_button:hover{
+    background: #b71010;
+}
+.woocommerce-minicart ul li.mini_cart_item .remove.remove_from_cart_button{
+    background: #666;
+    color: #fff;
+    border-radius: 100%;
+    padding: 1px 3px;
+}
+.shopping_cart .woocommerce-minicart .woocommerce-mini-cart__buttons.buttons{
+    display: flex;
+    width: 100%;
+}
+.shopping_cart .woocommerce-minicart .woocommerce-mini-cart__buttons.buttons a{
+    font-size: 14px;
+    padding: 8px 20px;
+    text-transform: none;
+    background: #e9398f;
+    color: #fff;
+    width: 50%;
+    margin-right: 10px;
+}
+.shopping_cart .woocommerce-minicart .woocommerce-mini-cart__buttons.buttons a:hover{
+    background: #9e6b29;
+}
+.shopping_cart .woocommerce-minicart {
+    width: 300px;
+}
+
+.woocommerce-minicart ul li.mini_cart_item .remove.remove_from_cart_button {
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+}
+
+.woocommerce-minicart ul li.mini_cart_item a {
+    font-weight: bold;
+}
+
+.shopping_cart .woocommerce-minicart ul.product_list_widget li img {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.shopping_cart .woocommerce-minicart ul.product_list_widget li .quantity {
+    margin-top: 10px;
+}
+.box_search .dgwt-wcas-search-wrapp {
+    margin-top: 10px;
+}
+
+.box_search .dgwt-wcas-sf-wrapp button.dgwt-wcas-search-submit {
+    background-color: #dfa66e;
+}
+.box_search .dgwt-wcas-sf-wrapp .dgwt-wcas-search-submit:before {border-color: transparent #dfa66e transparent;}
+.la-nav-list-items .caret:before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "\f107";
+    font-size: 18px;
+    left: 43%;
+}
+.la-nav-list-items li.open > .caret:before {
+    content: "\f106";
+}
+.la-nav-list-items .caret {
+	    font: normal normal normal 14px/1 FontAwesome;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 43px;
+    height: 43px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 900;
+    line-height: 25px;
+    color: #FFF;
+    background: rgba(0,0,0,0.2);
+    -webkit-transition: all 0.25s ease 0s;
+    -moz-transition: all 0.25s ease 0s;
+    transition: all 0.25s ease 0s;
+}
+

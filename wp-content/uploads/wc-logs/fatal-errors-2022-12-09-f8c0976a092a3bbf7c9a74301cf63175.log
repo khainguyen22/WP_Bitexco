@@ -1,0 +1,30 @@
+2022-12-09T13:40:08+00:00 CRITICAL Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/power/domains/power.dtts.com.vn/public_html/wp-content/themes/power/templates/tin-tuc-thuy-dien.php on line 43
+
+2022-12-09T14:08:53+00:00 CRITICAL syntax error, unexpected '=', expecting ')' in /home/power/domains/power.dtts.com.vn/public_html/wp-content/themes/power/templates/tin-tuc-thuy-dien.php on line 15
+
+2022-12-09T14:21:40+00:00 CRITICAL syntax error, unexpected ''category_name'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/power/domains/power.dtts.com.vn/public_html/wp-content/themes/power/templates/tin-tuc-thuy-dien.php on line 26
+
+2022-12-09T17:03:51+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in /home/power/domains/power.dtts.com.vn/public_html/wp-content/themes/power/templates/tin-tuc-thuy-dien_hoat-dong-xa-hoi.php:111
+Stack trace:
+#0 /home/power/domains/power.dtts.com.vn/public_html/wp-includes/template-loader.php(106): include()
+#1 /home/power/domains/power.dtts.com.vn/public_html/wp-blog-header.php(19): require_once('/home/power/dom...')
+#2 /home/power/domains/power.dtts.com.vn/public_html/index.php(17): require('/home/power/dom...')
+#3 {main}
+  thrown in /home/power/domains/power.dtts.com.vn/public_html/wp-content/themes/power/templates/tin-tuc-thuy-dien_hoat-dong-xa-hoi.php on line 111
+
+2022-12-09T17:04:29+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in /home/power/domains/power.dtts.com.vn/public_html/wp-content/themes/power/templates/tin-tuc-thuy-dien_khoa-hoc-cong-nghe.php:111
+Stack trace:
+#0 /home/power/domains/power.dtts.com.vn/public_html/wp-includes/template-loader.php(106): include()
+#1 /home/power/domains/power.dtts.com.vn/public_html/wp-blog-header.php(19): require_once('/home/power/dom...')
+#2 /home/power/domains/power.dtts.com.vn/public_html/index.php(17): require('/home/power/dom...')
+#3 {main}
+  thrown in /home/power/domains/power.dtts.com.vn/public_html/wp-content/themes/power/templates/tin-tuc-thuy-dien_khoa-hoc-cong-nghe.php on line 111
+
+2022-12-09T17:04:43+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in /home/power/domains/power.dtts.com.vn/public_html/wp-content/themes/power/templates/tin-tuc-thuy-dien_hoat-dong-xa-hoi.php:111
+Stack trace:
+#0 /home/power/domains/power.dtts.com.vn/public_html/wp-includes/template-loader.php(106): include()
+#1 /home/power/domains/power.dtts.com.vn/public_html/wp-blog-header.php(19): require_once('/home/power/dom...')
+#2 /home/power/domains/power.dtts.com.vn/public_html/index.php(17): require('/home/power/dom...')
+#3 {main}
+  thrown in /home/power/domains/power.dtts.com.vn/public_html/wp-content/themes/power/templates/tin-tuc-thuy-dien_hoat-dong-xa-hoi.php on line 111
+

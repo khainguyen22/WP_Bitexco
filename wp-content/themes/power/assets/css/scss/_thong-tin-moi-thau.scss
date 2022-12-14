@@ -1,0 +1,176 @@
+.thong-tin-moi-thau {
+    .banner {
+        min-height: 400px;
+        background-image: url('./../../access/images/banner-thong-tin-moi-thau.png');
+
+        .container {
+            .content {
+                top: calc(50% + 48px);
+
+                @media(max-width:767px) {
+                    top: 48%;
+                    left: 12%;
+                    transform: translate(0%, -25%);
+
+                    h3 {
+                        font-weight: 600;
+                        font-size: 32px;
+                        line-height: 130%
+                    }
+                }
+            }
+
+            .navigation {
+                bottom: 6px;
+                left: 100px;
+                @media(max-width:767px) {
+                    left: 20px;
+                    bottom: 3px;
+                }
+            }
+        }
+
+        @media(max-width:767px) {
+            min-height: 300px;
+        }
+    }
+
+
+
+    .main {
+        .container {
+            padding: 0 100px;
+
+            @media(max-width:767px) {
+                padding: 0 20px;
+            }
+        }
+
+        .filter-post-section {
+            padding: 32px 0px 32px 0px;
+            background-color: #F6F8FC;
+
+            .filter-post-container {
+                max-width: unset;
+
+                .form-filter {
+
+                    .form-filter-field,
+                    .form-filter-field select,
+                    .form-filter-date-start,
+                    .form-filter-date-end {
+                        width: 100%;
+                        max-width: 310px;
+
+                        @media(max-width:1024px) {
+                            width: 100%;
+                            max-width: 49%;
+                        }
+
+                        @media(max-width:767px) {
+                            width: 100%;
+                            max-width: 100%;
+                        }
+                    }
+
+                    .btn-reset {
+                        color: #DAA622;
+                    }
+
+                }
+            }
+        }
+
+        .infomation-list {
+            background: #E5E5E5;
+            padding-top: 40px;
+
+            .list {
+                .item {
+                    border-bottom: 1px solid #D1D5DB;
+                    padding: 30px 0;
+
+
+                    .head {
+
+
+                        .title {
+                            font-family: var(--secondary-font);
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 22px;
+                            line-height: 130%;
+                            display: flex;
+                            align-items: center;
+                            letter-spacing: 0.01em;
+                            color: #141518;
+                            margin-bottom: 16px;
+                        }
+
+                        .status {
+                            font-weight: 500;
+                            font-size: 11px;
+                            line-height: 150%;
+                            letter-spacing: 0.04em;
+                            text-transform: uppercase;
+                            color: #FFFFFF;
+                            padding: 2px 8px;
+                            border-radius: 2px;
+                            height: fit-content;
+
+                            &-info {
+                                background: #134FA5;
+                            }
+
+                            &-success {
+                                background: #3CAE69;
+                            }
+
+                            &-danger {
+                                background: #DD2027;
+                            }
+                        }
+
+                        @media(max-width:767px) {
+                            flex-direction: column;
+
+                            .status {
+                                width: fit-content;
+                                margin-top: 2px;
+                                margin-bottom: 18px;
+                            }
+                        }
+                    }
+
+                    .content {
+                        span {
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 160%;
+                            letter-spacing: 0.01em;
+                            color: #141518;
+                            margin-bottom: 10px;
+
+                            strong {
+                                font-weight: 500;
+                            }
+
+                            &::before {
+                                margin-right: 8px;
+                            }
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .filter-navigation {
+            margin: 30px 0 80px;
+        }
+    }
+}

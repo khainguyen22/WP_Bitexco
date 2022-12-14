@@ -1,0 +1,169 @@
+.danh-sach-tuyen-dung {
+
+    .banner {
+        background-image: url('./../../access/images/banner-tru-so.png');
+        min-height: 400px;
+    }
+
+    .main {
+        background-color: #FFFFFF;
+
+        @media(max-width:767px) {
+            .filter-post-section .container {
+                padding: 0 20px;
+            }
+
+            .container {
+                padding: 0;
+            }
+        }
+
+        .filter-post-section {
+            padding: 32px 0px 32px 0px;
+            background-color: #F6F8FC;
+
+            .filter-post-container {
+                max-width: unset;
+
+                .form-filter {
+
+                    .form-filter-field,
+                    .form-filter-field select,
+                    .form-filter-date-start,
+                    .form-filter-date-end {
+                        width: 100%;
+                        max-width: 310px;
+
+                        @media(max-width:1024px) {
+                            width: 100%;
+                            max-width: 49%;
+                        }
+
+                        @media(max-width:767px) {
+                            width: 100%;
+                            max-width: 100%;
+                        }
+                    }
+
+                    .btn-reset {
+                        color: #DAA622;
+                    }
+
+                }
+            }
+        }
+
+        .infomation-list {
+            background-color: #FFFFFF;
+            padding-top: 40px;
+
+            .list {
+                .item {
+                    border-bottom: 1px solid #D1D5DB;
+                    padding: 0 20px;
+
+                    &.disable {
+                        background-color: #F6F8FC;
+
+                        * {
+                            color: #7E8189;
+                        }
+                    }
+
+                    .info {
+                        max-width: 240px;
+                        padding: 30px 0;
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 160%;
+                        letter-spacing: 0.01em;
+                        color: #434449;
+
+                        .label {
+                            margin-bottom: 6px;
+                        }
+
+                        .desc {
+                            font-weight: 600;
+                            margin-bottom: 0;
+                        }
+
+                        .btn-detail-icon {
+                            transform: translateY(25%);
+                        }
+
+                        @media(max-width:1366px) {
+                            .btn-detail-icon {
+                                transform: translateY(0%);
+                            }
+                        }
+
+                        @media(max-width:767px) {
+                            padding: 0;
+                            max-width: 100%;
+                            width: 100%;
+
+                        }
+                    }
+
+                    @media(max-width:767px) {
+                        padding: 20px;
+                    }
+                }
+            }
+        }
+
+        .filter-navigation {
+            margin: 30px 0 80px;
+
+            @media(max-width:767px) {
+                margin: 30px 0 0px;
+            }
+        }
+
+        .gui-ho-so {
+            .col-left {
+                padding: 0;
+
+                .content {
+                    padding-top: 80px;
+                    max-width: 555px;
+                    margin: 0 auto;
+
+                    .btn.btn-search {
+                        max-width: 144px;
+                        min-width: unset;
+                        padding: 14px 32px;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 140%;
+                        letter-spacing: 0.04em;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+
+            .col-right {
+                padding: 0;
+            }
+
+            @media(max-width:767px) {
+                .row {
+                    flex-direction: column;
+
+                    .col-left {
+                        .content {
+                            padding-top: 33px;
+                            padding-bottom: 33px;
+                        }
+                    }
+
+
+                }
+
+            }
+        }
+
+    }
+
+}

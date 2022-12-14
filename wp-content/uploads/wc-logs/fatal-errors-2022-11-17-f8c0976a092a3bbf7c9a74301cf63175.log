@@ -1,0 +1,4 @@
+2022-11-17T02:07:01+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in /home/power/domains/power.dtts.com.vn/public_html/wp-content/themes/power/templates/template-homepage-one.php on line 112
+
+2022-11-17T02:15:10+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in /home/power/domains/power.dtts.com.vn/public_html/wp-content/themes/power/templates/template-homepage-one.php on line 108
+

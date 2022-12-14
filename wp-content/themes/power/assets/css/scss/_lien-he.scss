@@ -1,0 +1,131 @@
+.lien-he {
+
+    .banner {
+        background-image: url('./../../access/images/banner-tru-so.png');
+        min-height: 400px;
+
+    }
+
+    .content {
+        .col-left {
+            .wrap {
+                margin: 0 auto;
+                max-width: 604px;
+                padding-top: 61px;
+                padding-bottom: 114px;
+
+                .title {
+                    margin-bottom: 30px;
+                }
+
+                input,
+                select {
+                    margin-bottom: 16px;
+                }
+
+                label {
+                    margin-bottom: 4px;
+                }
+
+                textarea {
+                    margin-bottom: 30px;
+                }
+
+                .d-flex {
+                    margin: 0 -8px;
+
+                    @media(max-width: 767px) {
+                        flex-direction: column;
+                        margin: 0;
+
+                    }
+
+                    .w-50 {
+                        padding: 0 8px;
+
+                        @media(max-width: 767px) {
+                            width: 100% !important;
+                            padding: 0;
+                        }
+                    }
+                }
+
+                .submit {
+                    input {
+                        height: 48px;
+                        background: #DAA622;
+                        border-radius: 2px;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 140%;
+                        letter-spacing: 0.04em;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        .col-right {
+            background: linear-gradient(180deg, #F6F8FC 61.26%, rgba(246, 248, 252, 0) 95.98%);
+            padding-top: 61px;
+            padding-bottom: 114px;
+
+            .wrap {
+                max-width: 499px;
+                margin: 0 auto;
+
+                .title {
+                    padding-bottom: 30px;
+                    border-bottom: 1px solid #D1D5DB;
+                    margin-bottom: 30px;
+                }
+
+                .info {
+                    .desc {
+                        margin-bottom: 30px;
+                    }
+
+                    .name-company {
+                        font-weight: 600;
+                        font-size: 22px;
+                        line-height: 130%;
+                        letter-spacing: 0.01em;
+                        color: #434449;
+                        margin-bottom: 16px;
+                    }
+
+                    .contact-info {
+
+                        .address,
+                        .phone,
+                        .fax {
+                            margin-bottom: 16px;
+                        }
+
+                        .phone {
+                            .tel {
+                                margin-bottom: 8px;
+                            }
+
+                            .so-may {
+                                span {
+                                    margin-right: 12px;
+                                }
+
+                                * {
+                                    margin-bottom: 2px;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

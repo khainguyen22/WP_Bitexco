@@ -1,0 +1,1147 @@
+.tuyen-dung {
+    .recruit {
+        background: url(../../access/images/tuyendungbanner.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: 3;
+        min-height: 640px;
+        background-position: center center;
+
+        &::after {
+            background: rgba(0, 0, 0, 0.4);
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .container {
+            .content {
+                z-index: 2;
+
+                p {
+                    margin-top: 16px;
+                    margin-bottom: 40px;
+                }
+
+                button.position {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .opportunity {
+        background: url(../../access/images/opportunity.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: 3;
+        min-height: 400px;
+        background-position: center center;
+
+        &::after {
+            background: linear-gradient(84.51deg, rgba(0, 0, 0, 0.4) 7.63%, rgba(0, 0, 0, 0.252) 88.94%), url(image.png);
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .container {
+            .content {
+                z-index: 2;
+
+                p {
+                    margin-top: 16px;
+                    margin-bottom: 40px;
+                }
+
+                button.position {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .your-privilege {
+        padding: 100px 0;
+
+        .your-privilege-container {
+            max-width: 1240px;
+            margin: auto;
+
+            .your-privilege-content {
+                .content {
+                    max-width: 683px;
+                    margin: auto;
+                    text-align: center;
+
+                    .divider {
+                        width: 32px;
+                        margin: auto;
+                        display: block;
+                        border-top: 2px solid #daa622;
+                        margin-bottom: 6px;
+                    }
+
+                    h3 {
+                        font-family: "Manrope";
+                        font-weight: 500;
+                        font-size: 40px;
+                        line-height: 1.2;
+                        margin-bottom: 12px;
+                    }
+
+                    p {
+                        max-width: 499px;
+                        margin: auto;
+                        font-size: 16px;
+                        font-weight: 300;
+                        line-height: 1.6;
+                        letter-spacing: 0.01em;
+                    }
+                }
+
+                .services {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    column-gap: 20px;
+                    row-gap: 60px;
+                    margin-top: 60px;
+
+                    .service {
+                        width: calc(100%/3 - 16px);
+                        text-align: center;
+
+                        h6 {
+                            font-family: 'Manrope';
+                            font-weight: 600;
+                            font-size: 22px;
+                            line-height: 1.3;
+                            letter-spacing: 0.01em;
+                            color: #141518;
+                            margin-bottom: 8px;
+                            margin-top: 32px;
+                        }
+
+                        p {
+                            font-size: 16px;
+                            font-weight: 300;
+                            line-height: 1.6;
+                            letter-spacing: 0.01em;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .building-dream {
+        .building-dream-container {
+            .building-dream-content {
+                svg {
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    &.right {
+                        right: 36px;
+                        z-index: 1;
+                    }
+
+                    &.left {
+                        left: 36px;
+                        z-index: 1;
+                    }
+                }
+
+                .content {
+                    display: flex;
+
+                    img {
+                        width: 50%;
+                    }
+
+                    .text {
+                        width: 50%;
+                        padding: 80px;
+
+                        h4 {
+                            font-size: 32px;
+                            font-weight: 600;
+                            line-height: 1.3;
+                            font-family: 'Manrope';
+                            margin-bottom: 16px;
+                        }
+
+                        p {
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 1.6;
+                            letter-spacing: 0.01em;
+                            color: #434449;
+                        }
+                    }
+                }
+
+                .slick-dots {
+                    margin-top: 24px;
+                    display: flex;
+                    padding: 0;
+                    justify-content: center;
+                    column-gap: 8px;
+                    margin-bottom: 0;
+
+                    li {
+                        width: 10px;
+                        height: 10px;
+                        background-color: #D1D5DB;
+                        border-radius: 50%;
+
+                        &.slick-active {
+                            background-color: #DAA622;
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+
+                        button {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .life-at-bitexco-section {
+
+        .life-in-bitexco {
+            .container {
+                max-width: 1240px;
+                margin: auto;
+                padding: 0;
+
+                .lib-button {
+                    margin-top: 25px;
+                    text-align: center;
+
+                    button {
+                        text-transform: uppercase;
+                    }
+                }
+
+                .slick-dots {
+                    margin-top: 24px;
+                    display: flex;
+                    padding: 0;
+                    justify-content: center;
+                    column-gap: 8px;
+                    margin-bottom: 0;
+
+                    li {
+                        width: 10px;
+                        height: 10px;
+                        background-color: #D1D5DB;
+                        border-radius: 50%;
+
+                        &.slick-active {
+                            background-color: #DAA622;
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+
+                        button {
+                            display: none;
+                        }
+                    }
+                }
+
+                svg {
+                    top: 100px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    &.right {
+                        right: -36px;
+                        z-index: 1;
+                    }
+
+                    &.left {
+                        left: -36px;
+                        z-index: 1;
+                    }
+                }
+
+                .life-in-bitexco-content {
+                    margin-top: 62px;
+
+                    .content-item {
+                        padding-left: 15px;
+                        padding-right: 15px;
+
+                        h6 {
+                            font-weight: 600;
+                            font-size: 22px;
+                            line-height: 1.3;
+                            letter-spacing: 0.01em;
+                            color: #141518;
+                            margin-top: 12px;
+                        }
+
+                        p {
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 1.6;
+                            letter-spacing: 0.01em;
+                            color: #434449;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .slogan {
+        background: #F6F8FC;
+
+        .quote {
+            display: flex;
+            margin-top: 62px;
+
+            .quote-agency {
+                width: 50%;
+
+                .quote-agency-img {
+                    display: none;
+                    object-fit: cover;
+                    width: 605px;
+                    height: 450px;
+                    object-fit: cover;
+                }
+
+                .quote-agency-img.active {
+                    display: block;
+                }
+            }
+
+            .quote-content {
+                padding-left: 80px;
+                width: 50%;
+
+                .quote-navigation {
+                    display: flex;
+                    column-gap: 20px;
+
+                    .quote-nav-img {
+                        height: fit-content;
+                        img {
+                            width: 47.42px;
+                            height: 47.42px;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .quote-nav-img {
+                        &:hover {
+                            border: 4px solid #DAA622;
+                            border-radius: 50%;
+                            cursor: pointer;
+
+                            img {
+                                width: 60px;
+                                height: 60px;
+                            }
+                        }
+                    }
+
+                    .quote-nav-img.active {
+                        border: 4px solid #DAA622;
+                        border-radius: 50%;
+
+                        &:hover {
+                            cursor: pointer;
+
+                            img {
+                                width: 60px;
+                                height: 60px;
+                            }
+                        }
+
+                        img {
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+                }
+
+                .quote-text {
+                    .quote-text-inner {
+                        display: none;
+
+                        svg {
+                            margin-top: 40px;
+                            margin-bottom: 24px;
+                        }
+
+                        .quote-divider {
+                            border: 1px solid #DAA622;
+                            margin: 24px 0;
+                        }
+
+                        h2 {
+                            font-family: 'Manrope';
+                            font-weight: 500;
+                            font-size: 28px;
+                            line-height: 1.3;
+                            color: #141518;
+                        }
+
+                        p.company-role {
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 1.4;
+                            letter-spacing: 0.04em;
+                            color: #434449;
+                            margin-bottom: 4px;
+                            text-transform: uppercase;
+                        }
+
+                        h3.author {
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 1.6;
+                            letter-spacing: 0.01em;
+                            color: #141518;
+                        }
+                    }
+
+                    .quote-text-inner.active {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .power-enviroment {
+        .values {
+            display: flex;
+            margin-top: 61px;
+
+            .the-values {
+                width: 50%;
+                padding-right: 80px;
+
+                .drop-down.active {
+                    border-bottom: 1px solid #DAA622;
+
+                    h5 {
+                        color: #DAA622;
+                        position: relative;
+
+                        &::after {
+                            content: "";
+                            width: 10px;
+                            height: 10px;
+                            border-right: 1.5px solid #DAA622;
+                            border-bottom: 1.5px solid #DAA622;
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            transform: matrix(-1, 0, 0, 1, 0, 0) rotate(225deg);
+                        }
+                    }
+
+                    p {
+                        display: block;
+                    }
+                }
+
+                .drop-down+.drop-down {
+                    padding-top: 20px;
+                }
+
+                .drop-down {
+                    border-bottom: 1px solid #D1D5DB;
+                    padding-bottom: 20px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    h5 {
+                        font-family: 'Manrope';
+                        font-weight: 600;
+                        font-size: 28px;
+                        line-height: 1.3;
+                        margin-bottom: 8px;
+                    }
+
+                    p {
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 1.6;
+                        letter-spacing: 0.01em;
+                        color: #0d0d0e;
+                        display: none;
+                    }
+                }
+            }
+
+            .the-values-image {
+                width: 50%;
+
+                img {
+                    // height: 100%;
+                    object-fit: cover;
+                    display: none;
+                }
+
+                img.active {
+                    display: block;
+                }
+            }
+        }
+    }
+  
+}
+
+@media (max-width: 1366px) {
+    .tuyen-dung {
+        .your-privilege {
+            padding: 100px 64px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .tuyen-dung {
+        .your-privilege {
+            padding: 100px 100px;
+        }
+
+        .slogan {
+            .quote {
+                display: flex;
+                margin-top: 62px;
+
+                .quote-agency {
+                    width: 50%;
+
+                    .quote-agency-img {
+                        display: none;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                    .quote-agency-img.active {
+                        display: block;
+                    }
+                }
+
+                .quote-content {
+                    padding-left: 80px;
+                    width: 50%;
+
+                    .quote-navigation {
+                        display: flex;
+                        column-gap: 20px;
+
+                        .quote-nav-img {
+                            &:hover {
+                                border: 4px solid #DAA622;
+                                border-radius: 50%;
+                                cursor: pointer;
+
+                                img {
+                                    width: 60px;
+                                    height: 60px;
+                                }
+                            }
+                        }
+
+                        .quote-nav-img.active {
+                            border: 4px solid #DAA622;
+                            border-radius: 50%;
+
+                            &:hover {
+                                cursor: pointer;
+
+                                img {
+                                    width: 60px;
+                                    height: 60px;
+                                }
+                            }
+
+                            img {
+                                width: 60px;
+                                height: 60px;
+                            }
+                        }
+
+                        .quote-nav-img[data-number="6"],
+                        .quote-nav-img[data-number="7"],
+                        .quote-nav-img[data-number="8"] {
+                            display: none;
+                        }
+                    }
+
+                    .quote-text {
+                        .quote-text-inner {
+                            display: none;
+
+                            svg {
+                                margin-top: 40px;
+                                margin-bottom: 24px;
+                            }
+
+                            .quote-divider {
+                                border: 1px solid #DAA622;
+                                margin: 24px 0;
+                            }
+
+                            h2 {
+                                font-family: 'Manrope';
+                                font-weight: 500;
+                                font-size: 28px;
+                                line-height: 1.3;
+                                color: #141518;
+                            }
+
+                            p.company-role {
+                                font-weight: 300;
+                                font-size: 14px;
+                                line-height: 1.4;
+                                letter-spacing: 0.04em;
+                                color: #434449;
+                                margin-bottom: 4px;
+                                text-transform: uppercase;
+                            }
+
+                            h3.author {
+                                font-weight: 600;
+                                font-size: 18px;
+                                line-height: 1.6;
+                                letter-spacing: 0.01em;
+                                color: #141518;
+                            }
+                        }
+
+                        .quote-text-inner.active {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .tuyen-dung {
+        .your-privilege {
+            padding: 64px;
+        }
+
+        .building-dream {
+            .building-dream-container {
+                .building-dream-content {
+                    svg {
+                        &.right {
+                            right: 20px;
+                        }
+
+                        &.left {
+                            left: 20px;
+                        }
+                    }
+
+                    .content {
+                        display: flex;
+
+                        img {
+                            width: 50%;
+                        }
+
+                        .text {
+                            padding: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .slogan {
+            .quote {
+                display: flex;
+                margin-top: 62px;
+
+                .quote-agency {
+                    width: 50%;
+
+                    .quote-agency-img {
+                        display: none;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                    .quote-agency-img.active {
+                        display: block;
+                    }
+                }
+
+                .quote-content {
+                    padding-left: 40px;
+                    width: 50%;
+
+                    .quote-navigation {
+                        display: flex;
+                        column-gap: 20px;
+
+                        .quote-nav-img {
+                            &:hover {
+                                border: 4px solid #DAA622;
+                                border-radius: 50%;
+                                cursor: pointer;
+
+                                img {
+                                    width: 60px;
+                                    height: 60px;
+                                }
+                            }
+                        }
+
+                        .quote-nav-img.active {
+                            border: 4px solid #DAA622;
+                            border-radius: 50%;
+
+                            &:hover {
+                                cursor: pointer;
+
+                                img {
+                                    width: 60px;
+                                    height: 60px;
+                                }
+                            }
+
+                            img {
+                                width: 60px;
+                                height: 60px;
+                            }
+                        }
+
+                        .quote-nav-img[data-number="6"],
+                        .quote-nav-img[data-number="7"],
+                        .quote-nav-img[data-number="8"] {
+                            display: none;
+                        }
+                    }
+
+                    .quote-text {
+                        .quote-text-inner {
+                            display: none;
+
+                            svg {
+                                margin-top: 40px;
+                                margin-bottom: 24px;
+                            }
+
+                            .quote-divider {
+                                border: 1px solid #DAA622;
+                                margin: 24px 0;
+                            }
+
+                            h2 {
+                                font-family: 'Manrope';
+                                font-weight: 500;
+                                font-size: 28px;
+                                line-height: 1.3;
+                                color: #141518;
+                            }
+
+                            p.company-role {
+                                font-weight: 300;
+                                font-size: 14px;
+                                line-height: 1.4;
+                                letter-spacing: 0.04em;
+                                color: #434449;
+                                margin-bottom: 4px;
+                                text-transform: uppercase;
+                            }
+
+                            h3.author {
+                                font-weight: 600;
+                                font-size: 18px;
+                                line-height: 1.6;
+                                letter-spacing: 0.01em;
+                                color: #141518;
+                            }
+                        }
+
+                        .quote-text-inner.active {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    .tuyen-dung {
+        .your-privilege {
+            padding: 48px 48px;
+
+            .your-privilege-container {
+                .your-privilege-content {
+                    .services {
+                        .service {
+                            width: calc(100%/2 - 16px);
+                        }
+                    }
+                }
+            }
+        }
+
+        .power-enviroment {
+            .values {
+                display: flex;
+                flex-direction: column-reverse;
+
+                .the-values {
+                    margin-top: 20px;
+                    width: 100%;
+                    padding-right: 0;
+
+                    .drop-down.active {
+                        border-bottom: 1px solid #DAA622;
+
+                        h5 {
+                            color: #DAA622;
+                            position: relative;
+
+                            &::after {
+                                content: "";
+                                width: 10px;
+                                height: 10px;
+                                border-right: 1.5px solid #DAA622;
+                                border-bottom: 1.5px solid #DAA622;
+                                position: absolute;
+                                right: 0;
+                                top: 50%;
+                                transform: matrix(-1, 0, 0, 1, 0, 0) rotate(225deg);
+                            }
+                        }
+
+                        p {
+                            display: block;
+                        }
+                    }
+
+                    .drop-down+.drop-down {
+                        padding-top: 20px;
+                    }
+
+                    .drop-down {
+                        border-bottom: 1px solid #D1D5DB;
+                        padding-bottom: 20px;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+
+                        h5 {
+                            font-family: 'Manrope';
+                            font-weight: 600;
+                            font-size: 28px;
+                            line-height: 1.3;
+                            margin-bottom: 8px;
+                        }
+
+                        p {
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 1.6;
+                            letter-spacing: 0.01em;
+                            color: #0d0d0e;
+                            display: none;
+                        }
+                    }
+                }
+
+                .the-values-image {
+                    width: 100%;
+
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .tuyen-dung {
+        .your-privilege {
+            padding: 60px 20px;
+
+            .your-privilege-container {
+                .your-privilege-content {
+                    .content {
+                        h3 {
+                            font-size: 28px;
+                            line-height: 1.3;
+                        }
+
+                        p {
+                            font-size: 16px;
+                            line-height: 1.6;
+                            letter-spacing: 0.01em;
+                        }
+                    }
+
+                    .services {
+                        margin-top: 32px;
+                        row-gap: 32px;
+
+                        .service {
+                            width: 100%;
+
+                            h6 {
+                                font-weight: 600;
+                                font-size: 22px;
+                                line-height: 1.3;
+                                letter-spacing: 0.01em;
+                                margin-top: 20px;
+                            }
+
+                            p {
+                                font-size: 16px;
+                                line-height: 1.6;
+                                letter-spacing: 0.01em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .building-dream {
+            .building-dream-container {
+                .building-dream-content {
+                    svg {
+                        &.right {
+                            right: 20px;
+                        }
+
+                        &.left {
+                            left: 20px;
+                        }
+                    }
+
+                    .content {
+                        display: flex;
+                        flex-direction: column;
+
+                        img {
+                            width: 100%;
+                        }
+
+                        .text {
+                            width: 100%;
+                            padding: 20px;
+
+
+                            p {
+                                margin: 0;
+                            }
+                        }
+                    }
+
+                    .slick-dots {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+
+        .life-at-bitexco- {
+            .life-in-bitexco {
+                .container {
+                    max-width: 1240px;
+                    margin: auto;
+                    padding: 0;
+
+                    .lib-button {
+                        margin-top: 25px;
+                        text-align: center;
+
+                        button {
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    .slick-dots {
+                        margin-top: 24px;
+                        display: flex;
+                        padding: 0;
+                        justify-content: center;
+                        column-gap: 8px;
+                        margin-bottom: 0;
+
+                        li {
+                            width: 10px;
+                            height: 10px;
+                            background-color: #D1D5DB;
+                            border-radius: 50%;
+
+                            &.slick-active {
+                                background-color: #DAA622;
+                            }
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+
+                            button {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    svg {
+                        top: 100px;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+
+                        &.right {
+                            right: -36px;
+                            z-index: 1;
+                        }
+
+                        &.left {
+                            left: -36px;
+                            z-index: 1;
+                        }
+                    }
+
+                    .life-in-bitexco-content {
+                        margin-top: 62px;
+
+                        .content-item {
+                            padding-left: 0;
+                            padding-right: 0;
+
+                            h6 {
+                                font-family: 'Manrope';
+                                font-weight: 600;
+                                font-size: 22px;
+                                line-height: 1.3;
+                                letter-spacing: 0.01em;
+                                color: #141518;
+                                margin-top: 12px;
+                            }
+
+                            p {
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 1.6;
+                                letter-spacing: 0.01em;
+                                color: #434449;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .slogan {
+            .quote {
+                margin-top: 62px;
+                padding-top: 80px;
+                flex-direction: column;
+                row-gap: 24px;
+                position: relative;
+
+                .quote-agency {
+                    width: 100%;
+                }
+
+                .quote-content {
+                    padding-left: 0;
+                    width: 100%;
+
+                    .quote-navigation {
+                        position: absolute;
+                        top: 0;
+
+                        .quote-nav-img {
+                            img {
+                                width: 36px;
+                                height: 36px;
+                            }
+
+                            &:hover {
+                                cursor: pointer;
+
+                                img {
+                                    width: 40px;
+                                    height: 40px;
+                                }
+                            }
+                        }
+
+                        .quote-nav-img.active {
+                            &:hover {
+                                cursor: unset;
+
+                                img {
+                                    width: 40px;
+                                    height: 40px;
+                                }
+                            }
+
+                            img {
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
+
+                        .quote-nav-img[data-number="6"] {
+                            display: block;
+                        }
+                    }
+
+                    .quote-text {
+                        .quote-text-inner {
+                            svg {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

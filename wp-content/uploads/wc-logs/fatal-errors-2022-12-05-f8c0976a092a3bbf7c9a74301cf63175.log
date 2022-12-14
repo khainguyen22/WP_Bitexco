@@ -1,0 +1,4 @@
+2022-12-05T09:23:43+00:00 CRITICAL syntax error, unexpected ',' in /home/power/domains/power.dtts.com.vn/public_html/wp-content/themes/power/templates/danh-muc-du-an-dang-phat-trien.php on line 31
+
+2022-12-05T09:49:56+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /home/power/domains/power.dtts.com.vn/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 20
+

@@ -1,0 +1,77 @@
+.cac-cong-ti-thanh-vien {
+
+    .banner {
+        background-image: url('./../../access/images/banner-tru-so.png');
+        min-height: 400px;
+    }
+
+    .main {
+        background: #FFFFFF;
+
+        .filter-post-section {
+            .filter-post-container {
+                .form-filter form {
+                    .form-filter-search {
+                        width: 100%;
+                        max-width: 619px;
+                    }
+
+                    .form-filter-area {
+                        width: 100%;
+                        max-width: 328px;
+                    }
+
+                    .button-submit .btn-submit {
+                        background: #DAA622;
+                        border-radius: 2px;
+                        color: #ffffff;
+
+                        &:hover {
+                            background-color: unset;
+                            border: 1px solid #DAA622;
+                            color: #000;
+                        }
+                    }
+
+                    @media(max-width:1366px) {
+
+                        .form-filter-area,
+                        .form-filter-search {
+                            width: 33%;
+                            max-width: unset;
+                        }
+                    }
+
+                    @media(max-width:767px) {
+
+                        .form-filter-area,
+                        .form-filter-search {
+                            width: 100%;
+                            max-width: unset;
+                        }
+                    }
+                }
+
+                .filter-content {
+                    .filter-item {
+                        background: #FFFFFF;
+                        border: 1px solid #EAEDF3;
+                        border-radius: 2px;
+
+                        img {
+                            width: 100%;
+                        }
+
+                        .item-content {
+                            padding: 24px 20px 40px;
+
+                            span.tag {
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
