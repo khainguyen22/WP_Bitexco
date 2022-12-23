@@ -3,7 +3,6 @@
 		.terms-header-top {
 			text-align: center;
 			h3 {
-				justify-content: center;
 			}
 			p {
 				max-width: 559px;
@@ -19,7 +18,7 @@
 }
 
 section.site-map-content-section {
-	padding: 60px 100px;
+	padding: 35px 100px 64px 100px;
 	background-color: #ffffff;
 	.site-map-container {
 		max-width: 1240px;
@@ -27,7 +26,36 @@ section.site-map-content-section {
 		.tab {
 			border-bottom: 1px solid #D1D5DB;
 			padding-bottom: 24px;
-			padding-top: 24px;
+			position: relative;
+
+			&::after {
+				content: "";
+				position: absolute;
+				width: 0%;
+				height: 2px;
+				bottom: 0;
+				background-color: #DAA622;
+				transition: all .3s ease-in;
+			}
+
+			&:hover::after {
+				width: 100%;
+			}
+
+			&:hover {
+				.tab-title {
+					h2 {
+						a {
+							color: #DAA622;
+						}
+					}
+				}
+			}
+
+			&+.tab {
+				margin-top: 24px;
+			}
+
 			.tab-title {
 				display: flex;
 				align-items: center;
@@ -55,6 +83,7 @@ section.site-map-content-section {
 				div {
 					min-width: 272.5px;
 					h3 {
+						margin: 0;
 						a {
 							font-family: 'Public Sans';
 							font-style: normal;
@@ -65,12 +94,19 @@ section.site-map-content-section {
 							color: #141518;
 							display: block;
 							text-transform: uppercase;
-							text-decoration: underline;
+							text-decoration: none;
+							border-bottom: 1px solid #141518;
+							width: fit-content;
+							&:hover {
+								border-color: #DAA622;
+								color: #DAA622;
+							}
 						}
 					}
 					ul {
 						padding-left: 8px;
 						margin-top: 12px;
+						margin-bottom: 0;
 						li + li {
 							margin-top: 8px;
 						}
@@ -86,6 +122,10 @@ section.site-map-content-section {
 								text-decoration: underline;
 								display: block;
 								text-transform: capitalize;
+								width: fit-content;
+								&:hover {
+									color: #DAA622;
+								}
 							}
 						}
 					}
@@ -119,9 +159,23 @@ section.site-map-content-section {
 }
 
 @media (max-width: 1200px) {
+	.sitemap-banner {
+		.terms-header {
+			.terms-header-top {
+				p {
+					max-width: 640px;
+				}
+			}
+		}
+	}
 	section.site-map-content-section {
+		padding: 61px 100px 75px 100px;
 		.site-map-container {
 			.tab {
+				padding: 24px 0;
+				&+.tab {
+					margin-top: 0;
+				}
 				.tab-title {
 					h2 {
 						a {
@@ -130,14 +184,19 @@ section.site-map-content-section {
 				}
 				.flexed-tab {
 					padding-left: 30px;
+					margin-top: 20px;
 					div {
-						min-width: 195.75px;
+						width: 195.75px;
+						min-width: unset;
 						h3 {
 							a {
+								border: unset;
+								text-decoration: underline;
 							}
 						}
 						ul {
 							li + li {
+								margin-top: 10.5px;
 							}
 							li {
 								a {
@@ -165,7 +224,8 @@ section.site-map-content-section {
 				.flexed-tab {
 					padding-left: 30px;
 					div {
-						min-width: 195.75px;
+						min-width: unset;
+						width: calc(100%/4 - 30px);
 						h3 {
 							a {
 							}
@@ -192,21 +252,22 @@ section.site-map-content-section {
 			.terms-header-top {
 				text-align: center;
 				h3 {
-					justify-content: center;
 				}
 				p {
-					display: none;
+					font-size: 13px;
 				}
 			}
 		}
 	}
 	section.site-map-content-section {
-		padding: 40px 20px;
+		padding: 35px 20px 32px 20px;
 		.site-map-container {
 			.tab {
 				.tab-title {
 					h2 {
 						a {
+							font-size: 22px;
+							line-height: 1.3;
 						}
 					}
 				}
@@ -214,13 +275,14 @@ section.site-map-content-section {
 					flex-direction: column;
 					row-gap: 30px;
 					div {
-						min-width: 195.75px;
+						width: 100%;
 						h3 {
 							a {
 							}
 						}
 						ul {
 							li + li {
+								margin-top: 11px;
 							}
 							li {
 								a {

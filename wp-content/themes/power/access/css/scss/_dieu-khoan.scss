@@ -1,17 +1,17 @@
 .terms {
     .terms-header-top {
         position: relative;
-        background-image: url("./../../access/images/img-terms.png");
         background-repeat: no-repeat;
         background-size: cover;
-        min-height: 400px;
-
+        min-height: 640px;
+        background-position: center;
         div {
             position: absolute;
             left: 50%;
-            top: 53%;
+            top: calc(50% + 67px);
             transform: translateX(-50%);
-
+            width: 100%;
+            padding: 0 20px;
             span.line-headding {
                 width: 32px;
                 margin: auto;
@@ -23,9 +23,12 @@
                 font-size: 40px;
                 font-weight: 500;
                 color: #fff;
-                display: flex;
-                line-height: 48px;
-                margin-top: 5px;
+                line-height: 1.2;
+                margin-top: 8px;
+                margin-bottom: 8px;
+            }
+            p {
+                max-width: 640px;
             }
         }
     }
@@ -95,6 +98,14 @@
 
 @media (max-width: 1200px) {
     .terms {
+        .terms-header-top {
+            div {
+                top: calc(50% + 26px); 
+                p {
+                    max-width: 640px;
+                }
+            }
+        }
         span.divider {
             margin-top: 38px;
             margin-bottom: -6px;
@@ -107,34 +118,32 @@
     }
 }
 
-@media (max-width: 1200px) {
-    .terms {
-        .term-content-box {
-            padding: 0 64px;
-            padding-top: 57px;
-        }
-    }
-}
+// @media (max-width: 1200px) {
+//     .terms {
+//         .term-content-box {
+//             padding: 0 64px;
+//             padding-top: 57px;
+//         }
+//     }
+// }
 
 
 @media (max-width: 767px) {
     .terms {
         .terms-header-top {
-            min-height: 300px;
-        }
-
-        .terms-header-top div {
-            top: 41.7%;
-        }
-
-        .terms-header-top div h3 {
-            font-size: 32px;
-            width: max-content;
-        }
-
-        span.divider {
-            margin-top: 21px;
-            margin-bottom: -22px;
+            min-height: 419px;
+            div {
+                top: calc(50% + 9px);
+                h3 {
+                    font-size: 24px;
+                    line-height: 1.3;
+                    letter-spacing: 0.01em;
+                }
+                p {
+                    letter-spacing: 0.01em;
+                    font-size: 13px;
+                }
+            }
         }
 
         .term-content-box {

@@ -380,7 +380,7 @@
             </div>
             <div class="annual-report-content">
                 <?php if ($annual_report_query->have_posts()) : while ($annual_report_query->have_posts(  )) : $annual_report_query->the_post();?>
-                    <div class="annual-report-item" style="background: url(<?php echo the_post_thumbnail_url()?>)" data-postID="<?php echo get_the_ID()?>">
+                    <div class="annual-report-item hover-zoom" style="background-image: url(<?php echo the_post_thumbnail_url()?>)" data-postID="<?php echo get_the_ID()?>">
                        <div class="item-content">
                         <h6><?php  _e(get_the_title(get_the_ID()), POWER)?></h6>
                             <div class="download">
