@@ -36,15 +36,11 @@ body {
 body * {
   font-family: var(--primary-font);
 }
-body .container {
-  max-width: 1440px;
+
+.container {
+  max-width: 1240px;
   margin: auto;
-  padding: 0 60px;
-}
-@media (max-width: 767px) {
-  body .container {
-    padding: 0 20px;
-  }
+  padding: 0;
 }
 
 a,
@@ -120,6 +116,12 @@ h5,
   line-height: 130%;
   color: #141518;
 }
+@media (max-width: 767px) {
+  h5,
+.size-headding-28 {
+    font-size: 18px;
+  }
+}
 
 h6,
 .size-headding-22 {
@@ -171,6 +173,11 @@ button {
   font-size: 16px;
   line-height: 160%;
   letter-spacing: 0.01em;
+}
+@media (max-width: 767px) {
+  .size-text-16 {
+    font-size: 13px;
+  }
 }
 
 .size-text-18 {
@@ -1739,9 +1746,9 @@ section.other-information .other-container .other-content a {
   align-items: center;
   justify-content: center;
   width: 33.3333333333%;
-  min-height: 230px;
+  min-height: 300px;
   font-family: "Manrope";
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 600;
   line-height: 1.3;
   color: #FFF;
@@ -1750,6 +1757,21 @@ section.other-information .other-container .other-content a {
   background-size: cover;
   padding: 73px;
   text-align: center;
+  position: relative;
+}
+section.other-information .other-container .other-content a::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1440px) {
+  section.other-information .other-container .other-content a {
+    min-height: 230px;
+  }
 }
 @media (max-width: 767px) {
   section.other-information .other-container .other-content a {
@@ -1757,6 +1779,9 @@ section.other-information .other-container .other-content a {
     font-size: 28px;
     line-height: 130%;
   }
+}
+section.other-information .other-container .other-content a span.text {
+  z-index: 1;
 }
 section.other-information .other-container .other-content .hydro-electric-news {
   background-image: url(./../../access/images/hydroelectricnews.png);
@@ -1796,14 +1821,14 @@ section.other-information .other-container .other-content .bidding-information {
     width: 100%;
   }
 }
-.terms .terms-header-top {
+.terms-header-top {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 640px;
   background-position: center;
 }
-.terms .terms-header-top div {
+.terms-header-top div {
   position: absolute;
   left: 50%;
   top: calc(50% + 67px);
@@ -1811,124 +1836,99 @@ section.other-information .other-container .other-content .bidding-information {
   width: 100%;
   padding: 0 20px;
 }
-.terms .terms-header-top div span.line-headding {
+.terms-header-top div span.line-headding {
   width: 32px;
   margin: auto;
   display: block;
   border-top: 2px solid #daa622;
 }
-.terms .terms-header-top div h3 {
-  font-size: 40px;
-  font-weight: 500;
+.terms-header-top div h3 {
   color: #fff;
-  line-height: 1.2;
   margin-top: 8px;
   margin-bottom: 8px;
 }
-.terms .terms-header-top div p {
+.terms-header-top div p {
+  text-align: center;
   max-width: 640px;
-}
-.terms h5 {
-  letter-spacing: 0.2px;
   margin: auto;
 }
-.terms span.divider {
+
+h5 {
+  margin: 0;
+}
+
+.term-content-box {
+  padding: 61px 180px 82px 180px;
+  background-color: #fff;
+}
+.term-content-box .container {
+  max-width: 1028px;
+}
+.term-content-box .container span.divider {
   width: 100%;
   height: 1px;
   background: #d1d5db;
   display: block;
   margin-top: 40px;
-  margin-bottom: -8px;
+  margin-bottom: 40px;
 }
-.terms p.first {
-  margin-top: 48px;
-}
-.terms p {
-  margin: auto;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 25.6px;
-  letter-spacing: 0.1px;
-}
-.terms p + p {
-  margin-top: 28px;
-}
-.terms .term-content-box {
-  padding: 0 206px;
-  padding-top: 60px;
-}
-.terms .term-content-box .terms-container {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-.terms .term-content-box .terms-container .terms-content {
-  padding-bottom: 80px;
-}
-.terms .term-content-box .terms-container .terms-content h6 {
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 28.6px;
-  letter-spacing: 0.4px;
-  margin-bottom: 1px;
-  margin: auto;
+.term-content-box .container .terms-content h6 {
   margin-top: 20px;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 }
-.terms .term-content-box .terms-container .terms-content p {
-  font-weight: 300;
+.term-content-box .container .terms-content p {
   font-size: 16px;
-  line-height: 1.6em;
-  letter-spacing: 0.1px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  color: var(--text-color-black);
+}
+.term-content-box .container .terms-content p + p {
+  margin-top: 26.2px;
 }
 
 @media (max-width: 1200px) {
-  .terms .terms-header-top div {
+  .terms-header-top div {
     top: calc(50% + 26px);
   }
-  .terms .terms-header-top div p {
+  .terms-header-top div p {
     max-width: 640px;
   }
-  .terms span.divider {
-    margin-top: 38px;
-    margin-bottom: -6px;
+  .term-content-box {
+    padding: 61px 180px 92px 180px;
   }
-  .terms .term-content-box {
-    padding: 0 180px;
-    padding-top: 57px;
+  .term-content-box .container .terms-cotent p + p {
+    margin-top: 29px;
+  }
+}
+@media (max-width: 880px) {
+  .term-content-box {
+    padding: 64px 100px 64px 100px;
   }
 }
 @media (max-width: 767px) {
-  .terms .terms-header-top {
+  .terms-header-top {
     min-height: 419px;
   }
-  .terms .terms-header-top div {
+  .terms-header-top div {
     top: calc(50% + 9px);
   }
-  .terms .terms-header-top div h3 {
+  .terms-header-top div h3 {
     font-size: 24px;
     line-height: 1.3;
     letter-spacing: 0.01em;
   }
-  .terms .terms-header-top div p {
+  .terms-header-top div p {
     letter-spacing: 0.01em;
     font-size: 13px;
   }
-  .terms .term-content-box {
-    padding: 0 20px;
-    padding-top: 40px;
+  .term-content-box {
+    padding: 15px 20px 58px;
   }
-  .terms .term-content-box .terms-container .terms-content {
-    padding-bottom: 46px;
+  .term-content-box .container span.divider {
+    margin: 22px 0 24px;
   }
-  .terms .term-content-box .terms-container .terms-content h6 {
-    margin-top: 27px;
-    margin-bottom: 13px;
-  }
-  .terms p {
-    margin-right: 3px;
-  }
-  .terms p + p {
-    margin-top: 30px;
+  .term-content-box .container .terms-content h6 {
+    margin-top: 24px;
   }
 }
 .filter-post-section {
@@ -6630,14 +6630,15 @@ section.related-news .article-container .related-news-content .related-item .ite
 .sitemap-banner .terms-header .terms-header-top {
   text-align: center;
 }
+.sitemap-banner .terms-header .terms-header-top h5 {
+  margin: 0;
+}
 .sitemap-banner .terms-header .terms-header-top p {
-  max-width: 559px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.01em;
   color: #FFFFFF;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  max-width: 640px;
+  margin: auto;
 }
 
 section.site-map-content-section {
@@ -6674,6 +6675,7 @@ section.site-map-content-section .site-map-container .tab + .tab {
 section.site-map-content-section .site-map-container .tab .tab-title {
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 section.site-map-content-section .site-map-container .tab .tab-title h2 {
   margin: 0;

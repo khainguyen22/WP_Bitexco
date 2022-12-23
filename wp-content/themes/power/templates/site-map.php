@@ -15,7 +15,7 @@
 				<div>
 					<span class="line-headding"></span>
 					<h3><?php echo paint_if_exist($banner['banner_title'])?></h3>
-					<p><?php  echo paint_if_exist($banner['banner_descrition'])?></p>
+					<p class="size-text-16"><?php  echo paint_if_exist($banner['banner_descrition'])?></p>
 				</div>
 			</div>
 		</div>
@@ -45,7 +45,7 @@
 										stroke="#7E8189" stroke-width="1.5" stroke-linecap="round" />
 								</svg>
 							<?php endif;?>
-							<h2><a href="<?php echo paint_if_exist($value['title_url'])?>"><?php echo paint_if_exist($value['title'])?></a></h2>
+							<h5><a href="<?php echo paint_if_exist($value['title_url'])?>"><?php echo paint_if_exist($value['title'])?></a></h5>
 						</div>
 						<?php if (isset($value['sub']) && $value['sub'] != '') : ?>
 						<div class="power-production-tab-content flexed-tab">

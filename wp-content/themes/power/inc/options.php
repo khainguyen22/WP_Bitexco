@@ -95,11 +95,18 @@ function my_acf_op_init()
             'parent_slug' => $parent['menu_slug'],
         ));
 
-				// Add sub page.
-				$child = acf_add_options_page(array(
-					'page_title'  => __('Site map'),
-					'menu_title'  => __('Site map'),
-					'parent_slug' => $parent['menu_slug'],
-			));
+        // Add sub page.
+        $child = acf_add_options_page(array(
+            'page_title'  => __('Site map'),
+            'menu_title'  => __('Site map'),
+            'parent_slug' => $parent['menu_slug'],
+        ));
+
+         // Add sub page.
+         $child = acf_add_options_page(array(
+            'page_title'  => __('Điều Khoản Sử Dụng'),
+            'menu_title'  => __('Điều Khoản Sử Dụng'),
+            'parent_slug' => $parent['menu_slug'],
+        ));
     }
 }
