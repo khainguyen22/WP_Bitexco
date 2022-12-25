@@ -108,5 +108,19 @@ function my_acf_op_init()
             'menu_title'  => __('Điều Khoản Sử Dụng'),
             'parent_slug' => $parent['menu_slug'],
         ));
+
+         // Add sub page.
+        $child = acf_add_options_page(array(
+            'page_title'  => __('Trụ Sở'),
+            'menu_title'  => __('Trụ Sở'),
+            'parent_slug' => $parent['menu_slug'],
+        ));
+
+        // Add Sub Page
+        $child = acf_add_options_page(array(
+            'page_title'  => __('Liên Hệ'),
+            'menu_title'  => __('Liên Hệ'),
+            'parent_slug' => $parent['menu_slug'],
+        ));
     }
 }
