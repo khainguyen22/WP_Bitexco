@@ -901,6 +901,24 @@ label.required {
     }
 }
 
+// Banner
+.banner {
+    min-height: 640px;
+    position: relative;
+    background-position: center center;
+    background-repeat: repeat;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        top: 0;
+        left: 0;
+    }
+
+}
+
 @import './scss/bando';
 @import './scss/chitietbando2';
 @import './scss/_dangki';

@@ -1,130 +1,107 @@
-.lien-he {
-
-    .banner {
-        background-image: url('./../../access/images/banner-tru-so.png');
-        min-height: 400px;
-
-    }
-
-    .content {
-        .col-left {
-            .wrap {
-                margin: 0 auto;
-                max-width: 604px;
-                padding-top: 61px;
-                padding-bottom: 114px;
+.contact-content {
+    background-color: #fff;
+    .container {
+        max-width: 100%;
+        .contact-box {
+            display: flex;
+            justify-content: space-between;
+            .contact-form {
+                background-color: #fff;
+                padding: 60px 68px 100px 101px;
+                width: 53.68%;
 
                 .title {
                     margin-bottom: 30px;
                 }
 
-                input,
-                select {
-                    margin-bottom: 16px;
-                }
-
-                label {
-                    margin-bottom: 4px;
-                }
-
-                textarea {
-                    margin-bottom: 30px;
-                }
-
-                .d-flex {
-                    margin: 0 -8px;
-
-                    @media(max-width: 767px) {
-                        flex-direction: column;
-                        margin: 0;
-
-                    }
-
-                    .w-50 {
-                        padding: 0 8px;
-
-                        @media(max-width: 767px) {
-                            width: 100% !important;
-                            padding: 0;
+                .form-group {
+                    .field {
+                        background: #FFFFFF;
+                        border-radius: 2px;
+                        select {
+                            outline: none;
+                            padding: 10px 16px;
+                            font-family: 'Public Sans';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 160%;
+                            letter-spacing: 0.01em;
+                            color: #141518;
+                            border: none;
+                            border: 1px solid #D1D5DB;
+                            width: 100%;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            height: 48px;
+                        }
+                        input {
+                            outline: none;
+                            padding: 10px 16px;
+                            font-family: 'Public Sans';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 160%;
+                            letter-spacing: 0.01em;
+                            color: #7E8189;
+                            border: none;
+                            border: 1px solid #D1D5DB;
+                            width: 100%;
+                            height: 48px;
+                        }
+                        textarea {
+                            border: 1px solid #D1D5DB;
+                            width: 100%;
+                            height: 110px;
+                        }
+                        .label {
+                            margin: 16px 0 4px 0;
+                            font-family: 'Public Sans';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 160%;
+                            letter-spacing: 0.01em;
+                            color: #434449;
+                            span {
+                                color: #DD2027;
+                                margin-left: 4px;
+                                display: inline-block;
+                            }
                         }
                     }
-                }
 
-                .submit {
-                    input {
-                        height: 48px;
-                        background: #DAA622;
-                        border-radius: 2px;
-                        font-weight: 600;
-                        font-size: 14px;
-                        line-height: 140%;
-                        letter-spacing: 0.04em;
-                        text-transform: uppercase;
-                        color: #FFFFFF;
+                    .phone-email {
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 16px;
+                    }
 
-                        &:hover {
-                            cursor: pointer;
+                    .submit {
+                        margin-top: 30px;
+                        input {
+                            padding: 14px 32px;
+                            background: #DAA622;
+                            border-radius: 2px;
+                            width: 100%;
+                            border: none;
+                            font-family: 'Public Sans';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 140%;
+                            letter-spacing: 0.04em;
+                            text-transform: uppercase;
+                            color: #FFFFFF;
                         }
                     }
                 }
             }
-        }
-
-        .col-right {
-            background: linear-gradient(180deg, #F6F8FC 61.26%, rgba(246, 248, 252, 0) 95.98%);
-            padding-top: 61px;
-            padding-bottom: 114px;
-
-            .wrap {
-                max-width: 499px;
-                margin: 0 auto;
-
-                .title {
-                    padding-bottom: 30px;
-                    border-bottom: 1px solid #D1D5DB;
-                    margin-bottom: 30px;
-                }
-
-                .info {
-                    .desc {
-                        margin-bottom: 30px;
-                    }
-
-                    .name-company {
-                        font-weight: 600;
-                        font-size: 22px;
-                        line-height: 130%;
-                        letter-spacing: 0.01em;
-                        color: #434449;
-                        margin-bottom: 16px;
-                    }
-
-                    .contact-info {
-
-                        .address,
-                        .phone,
-                        .fax {
-                            margin-bottom: 16px;
-                        }
-
-                        .phone {
-                            .tel {
-                                margin-bottom: 8px;
-                            }
-
-                            .so-may {
-                                span {
-                                    margin-right: 12px;
-                                }
-
-                                * {
-                                    margin-bottom: 2px;
-                                }
-                            }
-                        }
-
-                    }
-                }
+            .contact-information {
+                padding: 60px 100px 114px 68px;
+                flex: 1;
+                background: linear-gradient(180deg, #F6F8FC 61.26%, rgba(246, 248, 252, 0) 95.98%);
             }
         }
     }
