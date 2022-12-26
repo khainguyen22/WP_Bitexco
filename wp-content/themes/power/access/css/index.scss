@@ -642,6 +642,17 @@ span.tag {
         display: inline-flex;
         height: 17px;
     }
+    &.tag-dropdown::before {
+        content: "";
+        -webkit-mask: url(../icon/Drop-down.svg) no-repeat 50% 50%;
+        mask: url(../icon/Drop-down.svg) no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        width: 24px;
+        background: #434449;
+        display: inline-flex;
+        height: 24px;
+    }
 }
 
 .custom-pagination {
